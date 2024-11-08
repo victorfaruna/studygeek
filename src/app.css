@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root[data-theme='light'] {
+	--main-color: 255, 255, 255;
+	--color-1: 0, 0, 0;
+	--color-2: 0, 0, 0;
+	--color-3: 255, 20, 255;
+	--color-4: 255, 255, 255;
+}
+
+:root[data-theme='dark'] {
+	--main-color: 20, 20, 20;
+	--color-1: 255, 255, 255;
+	--color-2: 255, 255, 255;
+	--color-3: 240, 98, 37;
+	--color-4: 0, 0, 10;
+}
+
+:root body {
+	color: rgb(var(--color-1));
+	font-size: 12px;
+	background-color: rgb(var(--main-color));
+	font-family: 'Poppins', serif;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
